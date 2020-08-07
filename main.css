@@ -1,0 +1,13 @@
+#mercado-body { 
+    background-color: snow;
+}
+
+.card{
+    margin-left: 1em;
+    margin-top: 30px;
+}
+
+#btn-carrinho{
+    margin: auto;
+    margin-top: 1em;
+}

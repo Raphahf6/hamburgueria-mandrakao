@@ -1,0 +1,34 @@
+{
+    "produtos": [
+      {
+        "codigo": 1,
+        "nome": "Maçã",
+        "preco": 2.30
+      },
+      {
+        "codigo": 2,
+        "nome": "Uva",
+        "preco": 8
+      },
+      {
+        "codigo": 3,
+        "nome": "Uva Sem Caroço",
+        "preco": 16
+      },
+      {
+        "codigo": 4,
+        "nome": "Abacaxi",
+        "preco": 5
+      },
+      {
+        "codigo": 5,
+        "nome": "Laranja Saco de 1 Kg",
+        "preco": 17.5
+      },
+      {
+        "codigo": 6,
+        "nome": "Salgadinho Torcida",
+        "preco": 1.99
+      }
+    ]
+  }
