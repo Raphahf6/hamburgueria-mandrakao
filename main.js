@@ -57,33 +57,7 @@ window.onload = function () {
     })
 
 
-    criarNovoProdutoNoCatalogo = (nome, imgUrl, preco) => {
 
-        const novoProduto = new Produto(nome, imgUrl, preco)
-        const container = document.querySelector('.row')
-        const divElement = document.createElement('div').className('col-sm-12 col-lg-4')
-
-        const cardElement = document.createElement('div').className('card')
-        const cardBody = document.createElement('div').className('card-body')
-        const cardText = document.createElement('p').className('card-text')
-        const imgCard = document.createElement('img').className('card-img-top')
-
-        const nomeProduto = document.createElement('h5').className('card-title')
-        const inputPreco = document.createElement('input').id(`preco${nome}`)
-        const inputQuantidade = document.createElement('input').className(`${nome}Quantidade`)
-        
-
-        imgCard.setAttribute("src", novoProduto.imgUrl)
-        nomeProduto.textContent = novoProduto.nome
-        cardText.textContent = 'Preco:'
-        inputPreco.setAttribute('value', preco)
-
-        divElement.appendChild(cardElement)
-        divElement.appendChild(cardBody)
-        divElement.appendChild(cardText)
-
-
-    }
 
     visualizarCarrinho = () => {
         for (i = 0; i < carrinho.produtos.length; i++) {
@@ -96,14 +70,14 @@ window.onload = function () {
 
     adicionaProdutoAoCarrinho = (produto) => {
 
-        if(produto.quantidade.value && produto.preco.value){
+        if (produto.quantidade.value && produto.preco.value) {
             let preco = produto.quantidade.value * produto.preco.value
             carrinho.produtos.push(produto = new ProdutoNoCarrinho(produto.nome, produto.quantidade.value, preco))
             alert(`O item ${produto.nome}, Quantidade: ${produto.quantidade} foi adicionado ao carrinho`)
-        } else{
+        } else {
             alert(`Selecione a quantidade de produto que deseja primeiro`)
         }
-        
+
     }
 
 }
