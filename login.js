@@ -16,25 +16,29 @@ class Usuario {
 
 
 let usuarios = [
-     raphael = new Usuario('raphael', '58723624', true)
+    raphael = new Usuario('raphael', '58723624', true)
 ]
 
 btnLogin.addEventListener('click', () => {
     login()
 })
 
-cadastrarUsuario.addEventListener('click', () =>{
+cadastrarUsuario.addEventListener('click', () => {
     cadastroDeUsuario()
 })
 
 cadastroDeUsuario = () => {
     event.preventDefault()
-    let novoUsuario = new Usuario(inputLogin.value, inputSenha.value, false)
-    usuarios.push(novoUsuario)
-    alert(`Usuario ${novoUsuario.login} cadastrado com sucesso!`)
-    
-}
 
+    if (inputLogin.value && inputSenha.value) {
+        let novoUsuario = new Usuario(inputLogin.value, inputSenha.value, false)
+        usuarios.push(novoUsuario)
+        alert(`Usuario ${novoUsuario.login} cadastrado com sucesso!`)
+    } else{
+        alert(`Digite um login e senha para o cadastro`)
+    }
+
+}
 
 
 login = () => {
