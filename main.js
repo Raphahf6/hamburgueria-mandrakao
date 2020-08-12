@@ -1,5 +1,6 @@
 window.onload = function () {
-    let btnCarrinho = document.getElementById('btn-carrinho')
+    const btnCarrinho = document.getElementById('btn-carrinho')
+    const inputTotal = document.getElementById('total')
 
 
     let carrinho = {
@@ -59,13 +60,14 @@ window.onload = function () {
 
 
 
+
+
     visualizarCarrinho = () => {
-        for (i = 0; i < carrinho.produtos.length; i++) {
+        for(i = 0; i < carrinho.produtos.length; i++){
             let produtoAtual = carrinho.produtos[i]
-            carrinho.total += produtoAtual.preco
-            alert(`Produto: ${produtoAtual.nome} `)
+            alert(`Produto: ${produtoAtual.nome} Quantidade: ${produtoAtual.quantidade}`)
         }
-        alert(`Total: ${carrinho.total} reais`)
+
     }
 
     adicionaProdutoAoCarrinho = (produto) => {
@@ -74,6 +76,9 @@ window.onload = function () {
             let preco = produto.quantidade.value * produto.preco.value
             carrinho.produtos.push(produto = new ProdutoNoCarrinho(produto.nome, produto.quantidade.value, preco))
             alert(`O item ${produto.nome}, Quantidade: ${produto.quantidade} foi adicionado ao carrinho`)
+            carrinho.total = carrinho.total + produto.preco
+            inputTotal.value = carrinho.total
+
         } else {
             alert(`Selecione a quantidade de produto que deseja primeiro`)
         }
@@ -81,3 +86,4 @@ window.onload = function () {
     }
 
 }
+

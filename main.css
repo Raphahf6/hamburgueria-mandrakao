@@ -1,7 +1,12 @@
 
 body{
-    background-color: #FCAB10;
+    background-color: #0D1321;
+    margin-top: 2em;
 
+}
+
+.navbar{
+    border-radius: 10px;
 }
 .card{
     margin-left: 1em;
