@@ -47,13 +47,11 @@ adicionaProdutoAoCarrinho = (nome) => {
     event.preventDefault()
     for (i = 0; i < inputQuantidade.length; i++) {
         let quantidade = inputQuantidade[i].value
-        if (quantidade) {
-            let preco = quantidade * inputPreco[i].value
-            carrinho.produtos.push(produto = new ProdutoNoCarrinho(nome, quantidade, preco))
-            carrinho.total = carrinho.total + produto.preco
-        } else{
-            alert(`Digite a quantidade de produtos`)
-        }
+
+        let preco = quantidade * inputPreco[i].value
+        carrinho.produtos.push(produto = new ProdutoNoCarrinho(nome, quantidade, preco))
+        carrinho.total = carrinho.total + produto.preco
+
     }
     inputTotal.value = carrinho.total
 

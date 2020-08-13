@@ -54,5 +54,8 @@ button#search{
     margin-top: 1rem;
 }
 
+.carousel{
+    max-width: 50%;
+}
 
 
