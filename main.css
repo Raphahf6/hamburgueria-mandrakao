@@ -1,8 +1,14 @@
+@font-face{
+    font-family: roboto;
+    src: url(assets/fonts/Roboto-MediumItalic.ttf)
+}
+
 
 body{
     background-color: #EFD09E;
     margin-top: 2em;
-
+    font-family: roboto;
+    
 }
 footer{
     border-radius: 10px;
@@ -29,21 +35,24 @@ footer{
 }
 
 #total {
-    width: 3em;
+    width: 4rem;
+    margin-right: 0rem;
 }
 
-button[id=comprar], button[id=btn-carrinho]{
+button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=modal-fechar]{
     background-color: #F37748;
     color: white;
     border-color: white;
     border-radius: 50px;
+    margin-top: 0px;
+    margin-left: 10px;
 }
 
 .container[id=app]{
-    background-color: #D56062;
-    padding: 0rem;
+    background-color: #F4F482;
+    padding: 1rem;
     border-radius: 10px;
-    max-width: 80%;
+    max-width: 100rem;
 }
 
 button#search{
@@ -54,8 +63,21 @@ button#search{
     margin-top: 1rem;
 }
 
-.carousel{
-    max-width: 50%;
+.container#app img {
+    height: 13rem;
+    
 }
 
+.carousel-inner img {
+    height: 40rem;
+
+}
+input[id=quantidade]{
+    margin-right: 13px;
+    border-radius: 50px;
+}
+
+input{
+    text-align: center;
+}
 
