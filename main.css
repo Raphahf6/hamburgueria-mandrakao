@@ -1,24 +1,58 @@
 
 body{
-    background-color: #0D1321;
+    background-color: #EFD09E;
     margin-top: 2em;
+
+}
+footer{
+    border-radius: 10px;
 
 }
 
 .navbar{
     border-radius: 10px;
+    margin-bottom: 1em;
 }
 .card{
-    margin-left: 1em;
-    margin-top: 30px;
-}
-
-#btn-carrinho{
-    margin: auto;
-    margin-top: 1em;
+    margin: 1rem;
+    padding: 5px;
+    
 }
 
 .preco{
     width: 50px;
     margin-left: 5px;
 }
+
+#btn-comprar{
+    margin-left: 10px;
+}
+
+#total {
+    width: 3em;
+}
+
+button[id=comprar], button[id=btn-carrinho]{
+    background-color: #F37748;
+    color: white;
+    border-color: white;
+    border-radius: 50px;
+}
+
+.container[id=app]{
+    background-color: #D56062;
+    padding: 0rem;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+button#search{
+    margin-right: 11rem;
+}
+
+.container[id=navbar-carrinho]{
+    margin-top: 1rem;
+}
+
+
+

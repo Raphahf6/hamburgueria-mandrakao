@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -22,79 +22,218 @@
 </head>
 
 <body>
-
-    <div class="container" id="app">
-        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container col-sm-12 col-lg-12">
+        <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand"><img src="./assets/img/favicon.ico"> </a>
             <form class="form-inline">
-                <a>Total:</a>
-                <input class="form-control" type="text" id="total" value="0" disabled>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search">Pesquisar</button>
+
+
             </form>
         </nav>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval=3000>
+                <img src="assets/img/maca.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval=3000>
+                <img src="assets/img/uva-sem-caroco.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval=3000>
+                <img src="assets/img/uva.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class="container col-sm-5 col-lg-5" id="navbar-carrinho">
+        <!-- As a link -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Total</a>
+            <input class="form-control" type="text" id="total" value="0" disabled>
+            <button class="btn" id="comprar">Adicionar ao carrinho</button>
+            <button class="btn" id="btn-carrinho">Visualizar carrinho</button>
+
+        </nav>
+    </div>
+    <div class="container" id="app">
         <div class="row">
 
+            <div class="col-sm-12 col-lg-3">
 
-            <div class="col-sm-12 col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/uva.jpg" class="card-img-top" alt="..." id="imgUva">
+                <div class="card text-center bg-light">
+                    <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgUva">
                     <div class="card-body">
-                        <h5 class="card-title">Uva</h5>
+                        <h5 class="card-title">Maçã</h5>
                         <p class="card-text">
-                            Preço:<input value="8" class="preco" id="precoUva" disabled></p>
+                            Preço:<input value="4" class="preco" id="preco" disabled></p>
 
 
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="quantidadeUva" placeholder="Quantidade"
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="comprarUva">Comprar</button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/uva-sem-caroco.jpg" class="card-img-top" alt="..." id="imgUvaSemCaroco">
+
+
+
+            <div class="col-sm-12 col-lg-3">
+                <div class="card text-center">
+                    <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgUvaSemCaroco">
                     <div class="card-body">
-                        <h5 class="card-title">Uva sem caroço</h5>
-                        <p class="card-text">Preço:<input value="16" class="preco" id="precoUvaSemCaroco" disabled></p>
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Preço:<input value="4" class="preco" id="preco" disabled></p>
                         </p>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="quantidadeUvaSemCaroco" placeholder="Quantidade"
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button"
-                                    id="comprarUvaSemCaroco">Comprar</button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="card" style="width: 18rem;">
+
+
+            <div class="col-sm-12 col-lg-3">
+                <div class="card text-center">
                     <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgMaca">
                     <div class="card-body">
-                        <h5 class="card-title">Maça</h5>
-                        <p class="card-text">Preço:<input value="4" class="preco" id="precoMaca" disabled></p>
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Preço:<input value="4" class="preco" id="preco" disabled></p>
                         </p>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="quantidadeMaca" placeholder="Quantidade"
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button"
-                                    id="comprarMaca">Comprar</button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-success" id="btn-carrinho">Visualizar carrinho</button>
+
+            <div class="col-sm-12 col-lg-3">
+                <div class="card text-center">
+                    <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgMaca">
+                    <div class="card-body">
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Preço:<input value="4" class="preco" id="preco" disabled></p>
+                        </p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
+                                aria-label="Digite a quantidade" aria-describedby="button-addon2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-lg-3">
+                <div class="card text-center">
+                    <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgMaca">
+                    <div class="card-body">
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Preço:<input value="4" class="preco" id="preco" disabled></p>
+                        </p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
+                                aria-label="Digite a quantidade" aria-describedby="button-addon2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <div class="card text-center">
+                    <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgMaca">
+                    <div class="card-body">
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Preço:<input value="4" class="preco" id="preco" disabled></p>
+                        </p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
+                                aria-label="Digite a quantidade" aria-describedby="button-addon2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <div class="card text-center">
+                    <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgMaca">
+                    <div class="card-body">
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Preço:<input value="4" class="preco" id="preco" disabled></p>
+                        </p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
+                                aria-label="Digite a quantidade" aria-describedby="button-addon2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-lg-3">
+                <div class="card text-center">
+                    <img src="assets/img/maca.jpg" class="card-img-top" alt="..." id="imgMaca">
+                    <div class="card-body">
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Preço:<input value="4" class="preco" id="preco" disabled></p>
+                        </p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="quantidade" placeholder="Quantidade"
+                                aria-label="Digite a quantidade" aria-describedby="button-addon2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
 
     </div>
+
+    <footer class="container-fluid bg-light p-5 mt-5">
+        <div class="d-flex bd-highlight">
+            <div class="mr-auto bd-highlight">
+                <p>Mercadao ArByte</p>
+            </div>
+            <div class=" bd-highlight"><a href=""><img src="assets/img/favicon.ico" alt="Logo Arbyte"
+                        class="brand-icon ml-auto"></a></div>
+        </div>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 
