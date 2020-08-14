@@ -1,6 +1,5 @@
 window.onload = () => {
     const div = document.createElement('div')
-    const btnModal = document.getElementById('modal')
     const divModal = document.getElementById('modal-body')
     const divCardapio = document.getElementById('cardapio')
     const urlProdutos = 'http://localhost:3000/produtos'

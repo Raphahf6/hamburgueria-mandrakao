@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -58,56 +59,67 @@
     </div>
 
     <div class="container col-sm-12 col-lg-12" id="navbar-carrinho">
-            <nav class="navbar navbar-light bg-light col-sm-12">
-                <a class="navbar-brand"><img src="./assets/img/favicon.ico">
-                <a class="navbar-brand" href="#">Valor final no carrinho:</a>
+        <nav class="navbar navbar bg-dark">
+            <a class="navbar-brand text-white"></a>
+            <form class="form-inline">
+                <p class="text-white">Total no carrinho</p>
+                <input class="form-control mr-sm-2" type="text" id="total" value="0" disabled>
+                <button type="button col-sm-0" class="btn" data-toggle="modal" data-target="#staticBackdrop" id="modal" onclick="event.preventDefault()">
+                    Carrinho
+                </button>
+                <button class="btn col-sm-0" id="limpar-carrinho">Limpar Carrinho</button>
+
+            </form>
+          </nav>
+        <!-- <nav class="navbar navbar-brand form-inline navbar-light bg-light col-sm-12">
+            <img src="./assets/img/favicon.ico">
                 <input class="form-control" type="text" id="total" value="0" disabled>
                 <button class="btn" id="limpar-carrinho">Limpar Carrinho</button>
-                <!-- Button trigger modal -->
                 <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop" id="modal">
                     Carrinho
                 </button>
+        </nav> -->
 
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header text-white">
-                                <h5 class="modal-title text-dark" id="staticBackdropLabel">Carrinho</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body" id="modal-body">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-white">
+                        <h5 class="modal-title text-dark" id="staticBackdropLabel">Carrinho</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn" id="modal-fechar" data-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" id="modal-fechar" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
+            </div>
+        </div>
 
 
 
-            </nav>
+
 
     </div>
 
     <div class="container col-sm-12 col-lg-8 offset-md-2">
-            <div class="jumbotron bg-transparent
+        <div class="jumbotron bg-transparent
             jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">Hamburguer</h1>
-                  <p class="lead">Aprecie o nosso cardapio com os mais variados hamburgueres artesanais</p>
-                </div>
-              </div>
+            <div class="container">
+                <h1 class="display-4">Hamburguer</h1>
+                <p class="lead">Aprecie o nosso cardapio com os mais variados hamburgueres artesanais</p>
+            </div>
         </div>
+    </div>
 
-        <div class="container col-sm-12 col-lg-10 offset-lg-1" id="cardapio">
-        
-        </div>
+    <div class="container col-sm-12 col-lg-10 offset-lg-1" id="cardapio">
+
+    </div>
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
