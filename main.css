@@ -39,17 +39,15 @@ footer{
     margin-right: 0rem;
 }
 
-button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=modal-fechar]{
+button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=modal-fechar], button[class=btn]{
     background-color: #F37748;
     color: white;
-    border-color: white;
     border-radius: 50px;
     margin-top: 0px;
     margin-left: 10px;
 }
 
 .container[id=app]{
-    background-color: #F4F482;
     padding: 1rem;
     border-radius: 10px;
     max-width: 100rem;
@@ -70,9 +68,8 @@ button#search{
 
 .carousel-inner img {
     height: 40rem;
-
 }
-input[id=quantidade]{
+input[class=form-control]{
     margin-right: 13px;
     border-radius: 50px;
 }
@@ -81,3 +78,20 @@ input{
     text-align: center;
 }
 
+.jumbotron{
+    color:black;
+    border-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+#cardapio{
+    border-style: solid;
+    border-color: blanchedalmond;
+    border-radius: 10px;
+    
+}
+
+#img-produto-carrinho {
+    width: 54px;
+    margin-right: 9px;
+}

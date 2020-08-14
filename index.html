@@ -57,31 +57,30 @@
         </div>
     </div>
 
-    <div class="container col-sm-5 col-lg-12" id="navbar-carrinho">
-        <div class="container col-sm-12 col-lg-12">
-            <nav class="navbar navbar-light bg-light">
+    <div class="container col-sm-12 col-lg-12" id="navbar-carrinho">
+            <nav class="navbar navbar-light bg-light col-sm-12">
                 <a class="navbar-brand"><img src="./assets/img/favicon.ico"> </a>
                 <a class="navbar-brand" href="#">Valor final no carrinho:</a>
                 <input class="form-control" type="text" id="total" value="0" disabled>
                 <button class="btn" id="limpar-carrinho">Limpar Carrinho</button>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop" id="modal">
-                    Cardapio
+                    Carrinho
                 </button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content bg-dark">
+                        <div class="modal-content">
                             <div class="modal-header text-white">
-                                <h5 class="modal-title bg-dark" id="staticBackdropLabel">Cardapio</h5>
+                                <h5 class="modal-title text-dark" id="staticBackdropLabel">Carrinho</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body" id="modal-body">
-                                
+
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn" id="modal-fechar" data-dismiss="modal">Fechar</button>
@@ -93,9 +92,22 @@
 
 
             </nav>
-        </div>
 
     </div>
+
+    <div class="container col-sm-12 col-lg-8 offset-md-2">
+            <div class="jumbotron bg-transparent
+            jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Hamburguer</h1>
+                  <p class="lead">Aprecie o nosso cardapio com os mais variados hamburgueres artesanais</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="container col-sm-12 col-lg-10 offset-lg-1" id="cardapio">
+        
+        </div>
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

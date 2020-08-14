@@ -1,46 +1,65 @@
 {
     "produtos": [
       {
-        "id": 1,
+        "id": 0,
         "nome": "X-bacon",
         "preco": 10,
-        "imgUrl": "assets/img/x-bacon.jpg"
+        "imgUrl": "assets/img/x-bacon.jpg",
+        "quantidade": ""
       },
       {
-        "id": 2,
+        "id": 1,
         "nome": "X-mandrake",
         "preco": 20,
         "imgUrl": "assets/img/x-mandrake.jpg"
 
       },
       {
-        "id": 3,
+        "id": 2,
         "nome": "Big",
         "preco": 16,
         "imgUrl": "assets/img/big.jpg"
       },
       {
-        "id": 4,
+        "id": 3,
         "nome": "X-tudo",
         "preco": 12,
         "imgUrl": "assets/img/x-tudo.jpg"
       },
       {
-        "id": 5,
+        "id": 4,
         "nome": "X-promise",
         "preco": 17,
         "imgUrl": "assets/img/x-promise.jpg"
       },
       {
-        "id": 6,
+        "id": 5,
         "nome": "X-salada",
         "preco": 10,
         "imgUrl": "assets/img/x-salada.jpg"
       },
       {
+        "id": 6,
         "nome": "Big Bacon",
         "preco": 15,
         "imgUrl": "assets/img/big.jpg"
+      },
+      {
+        "id": 7,
+        "nome": "X-Axios",
+        "preco": 25,
+        "imgUrl": "https://images.unsplash.com/photo-1584178639036-613ba57e5e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "id": 8,
+        "nome": "X-Magrao",
+        "preco": "30",
+        "imgUrl":"https://images.unsplash.com/photo-1595289917299-ed07df93e114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      }
+    ],
+    "carrinho":[
+      {
+        
       }
     ]
   }

@@ -1,0 +1,51 @@
+Tem que ser feito com html, css e js
+- não é obrigatório utilizar bootstrap
+- não é obrigatório ter slider
+- código precisa estar comentado para que seja fácil de entender
+- mínimo de 15 produtos
+- todo produto deve ter NOME, PREÇO e FOTO
+  {
+    "id": 1,
+    "nome": "Maçã",
+    "preço": "2.30",
+    "foto": URL ou o caminho do arquivo no seu projeto
+  }
+- precisa estar conectado com a API
+- precisa funcionar dinamicamente adicionando produtos na tela caso eu adicione produtos no json
+  - Exemplo: Os produtos devem ser criados na tela de acordo com os produtos que vem da API
+             Quando eu criar um novo produto no json, quando eu recarregar a página, ele deve aparecer na lista
+             Para fazer isso, utilizar appendChild() e innerHTML para adicionar HTML via JS
+- quem quiser fazer o carrinho aparecer numa janela em cima do site, utilizar Modal
+  - Dica: https://getbootstrap.com/docs/4.5/components/modal/
+- exemplo do json do carrinho (não precisa ser necessariamente assim)
+  {
+    "id": 1,
+    "nome": "Maçã",
+    "preço": "2.30",
+    "quantidade": 10,
+    "foto": URL ou o caminho do arquivo no seu projeto (OU pegar direto do produto)
+  }
+- pode consultar o http://codepen.io
+- precisa estar no github
+1. Quero acessar uma página onde consigo escolher produtos para fazer a minha compra
+  - Lista de produtos com NOME, PREÇO e FOTO
+2. Quero poder escolher a quantidade do produto e adicioná-lo ao carrinho
+  - Tem que ter um input onde o usuário digita um número e adiciona aquela quantidade ao carrinho
+    Verificar se o usuário REALMENTE preencheu uma quantidade para adicionar o produto ao carrinho
+3. Quero poder visualizar o meu carrinho e os produtos dentro dele
+  - Pode ser uma página com os produtos no carrinho,
+    onde tem uma lista com NOME, FOTO, TOTAL (preço * quantidade)
+COLOQUE UM SORRISO NO ROSTO DO PEDRO:
+4. Quero poder remover o produto do carrinho (NÃO OBRIGATÓRIO, MAS VOU O PEDRO FICA FELIZ SE FIZER)
+  - Na mesma lista de produtos do carrinho, ter uma opção de excluir o produto do carrinho
+O que estamos avaliando nisso:
+- Axios / Promise
+- Classes
+- DOM
+- HTML, JS, CSS
+Quantas pessoas?
+- 3 pessoas (quem quiser, fique a vontade para fazer sozinho, em 2 pessoas) entrega 1 site só
+Qual é o prazo?
+Quinta-feira (20/08) 20:30
+Apresentação
+Quinta-feira (20/08) 20:30
