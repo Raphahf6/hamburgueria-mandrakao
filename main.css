@@ -44,17 +44,17 @@ button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=moda
     color: white;
     border-radius: 50px;
     margin-top: 0px;
-    margin-left: 10px;
+    margin-left: 0px;
+}
+
+.navbar a, .navbar img, .navbar button {
+    margin: auto;
 }
 
 .container[id=app]{
     padding: 1rem;
     border-radius: 10px;
     max-width: 100rem;
-}
-
-button#search{
-    margin-right: 11rem;
 }
 
 .container[id=navbar-carrinho]{
