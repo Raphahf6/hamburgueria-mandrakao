@@ -5,11 +5,17 @@ const divCardapio = document.getElementById('cardapio')
 const divBebidas = document.getElementById('cardapio-bebidas')
 const urlProdutos = 'https://raphahf6.github.io/hamburgueria-mandrakao/db.json'
 div.className = 'container'
+const btnDark = document.getElementById('dark-mode')
 
-// let carrinho = {
-//     produtos: [],
-//     total: 0
-// }
+btnDark.addEventListener('click', () =>{
+    document.body.setAttribute('style', 'background-color: #272932;')
+    const tituloProdutos = document.querySelectorAll('div#titulo-produtos')
+    for(i = 0; i < tituloProdutos.length; i++){
+        tituloProdutos[i].setAttribute('style', 'color: #F0F8EA;')
+
+    }
+})
+
 
 class Carrinho {
     constructor() {
