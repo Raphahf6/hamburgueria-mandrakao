@@ -3,8 +3,7 @@ const btnCarrinho = document.getElementById('modal')
 const divModal = document.getElementById('modal-body')
 const divCardapio = document.getElementById('cardapio')
 const divBebidas = document.getElementById('cardapio-bebidas')
-const urlProdutos = 'http://localhost:3000/hamburgueres'
-const urlBebidas = 'http://localhost:3000/bebidas'
+const urlProdutos = 'https://raphahf6.github.io/Mercado/db.json'
 div.className = 'container'
 
 // let carrinho = {
@@ -99,6 +98,9 @@ limparCarrinho = () => {
 axios.get(urlProdutos)
     .then(response => {
         const api = response.data
+        const {hamburgueres} = api
+        console.log(hamburgueres)
+
         const container = document.createElement('div')
         container.className = 'container'
         container.id = 'app'
@@ -107,8 +109,8 @@ axios.get(urlProdutos)
 
 
 
-        for (i = 0; i < api.length; i++) {
-            let produtoAtual = api[i]
+        for (i = 0; i < hamburgueres.length; i++) {
+            let produtoAtual = hamburgueres[i]
             let divCard = document.createElement('div')
             divCard.className = 'col-sm-12 col-lg-4'
             divCard.innerHTML = ` 
@@ -233,9 +235,10 @@ axios.get(urlProdutos)
     })
 
 
-axios.get(urlBebidas)
+axios.get(urlProdutos)
     .then(response => {
         const api = response.data
+        const {bebidas} = api
         const container = document.createElement('div')
         container.className = 'container'
         container.id = 'app'
@@ -244,8 +247,8 @@ axios.get(urlBebidas)
 
 
 
-        for (i = 0; i < api.length; i++) {
-            let produtoAtual = api[i]
+        for (i = 0; i < bebidas.length; i++) {
+            let produtoAtual = bebidas[i]
             let divCard = document.createElement('div')
             divCard.className = 'col-sm-12 col-lg-4'
             divCard.innerHTML = ` 
