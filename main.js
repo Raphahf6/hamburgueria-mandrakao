@@ -33,7 +33,7 @@ axios.get(urlProdutos)
                     <div class="card-body">
                         <h5 class="card-title">${produtoAtual.nome}</h5>
                         <p class="card-text">
-                            Preço:<input value="${produtoAtual.preco}" class="preco" id="preco-${produtoAtual.id}" disabled></p>
+                            Preço:<input value="${produtoAtual.preco}" class="preco .text-black-50" id="preco-${produtoAtual.id}" disabled></p>
 
 
                         <div class="input-group mb-3">
@@ -65,43 +65,48 @@ axios.get(urlProdutos)
 
             btnComprar.addEventListener('click', () => {
                 //adicionaProdutoAoCarrinho(produtoAtual)
-                if (inputQuantidade.value) {
-                    event.preventDefault()
-                    let preco = inputPreco * inputQuantidade.value
 
 
-                    let novoProduto = new ProdutoNoCarrinho(produtoAtual.nome, inputQuantidade.value, preco, produtoAtual.id)
+                if (inputQuantidade.value === '') {
+                    inputQuantidade.value = 1
+                }
 
-                    //   axios.post(urlCarrinho, {
-                    //       "nome": "novoProduto.nome",
-                    //       "preco": "novoProduto.preco",
-                    //       "quantidade": "novoProduto.quantidade"
-                    //   })
-                    //       .then(response => {
-                    //           alert('Adicionado ao carrinho')
-                    //       })
-
-                    carrinho.produtos.push(novoProduto)
-                    carrinho.total = carrinho.total + novoProduto.preco
-                    inputTotal.value = carrinho.total
+                event.preventDefault()
+                let preco = inputPreco * inputQuantidade.value
 
 
+                let novoProduto = new ProdutoNoCarrinho(produtoAtual.nome, inputQuantidade.value, preco, produtoAtual.id)
 
-                    divModal.innerHTML += `<ul class="list-group" id="carrinho-${novoProduto.id}" 
+                //   axios.post(urlCarrinho, {
+                //       "nome": "novoProduto.nome",
+                //       "preco": "novoProduto.preco",
+                //       "quantidade": "novoProduto.quantidade"
+                //   })
+                //       .then(response => {
+                //           alert('Adicionado ao carrinho')
+                //       })
+
+                carrinho.produtos.push(novoProduto)
+                carrinho.total = carrinho.total + novoProduto.preco
+                inputTotal.value = carrinho.total
+
+
+
+                divModal.innerHTML += `<ul class="list-group" id="carrinho-${novoProduto.id}" 
                     style="list-style: none;"> <li id="carrinho-produtos-${novoProduto.id}"> 
                     <img id="img-produto-carrinho" src="${produtoAtual.imgUrl}"> 
                     Produto: ${novoProduto.nome} Quantidade: ${novoProduto.quantidade} 
                     Preco: ${novoProduto.preco}<button type="button" class="btn-produtos" id="btn-produtos-${novoProduto.id}">x</button><br>
                     </li></ul>`
-                    alert(`${novoProduto.nome} Quantidade: ${novoProduto.quantidade} foi adicionado ao carrinho`)
+                alert(`${novoProduto.nome} Quantidade: ${novoProduto.quantidade} foi adicionado ao carrinho`)
+                inputQuantidade.value = ''
 
 
 
 
 
-                } else {
-                    alert('Insira a quantidade primeiro')
-                }
+
+
             })
 
 

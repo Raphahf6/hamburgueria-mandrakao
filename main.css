@@ -36,16 +36,15 @@ footer{
 
 #total {
     width: 4rem;
-    margin-right: 0rem;
     border-radius: 19px;
+    margin: auto;
 }
 
 button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=modal-fechar]{
     background-color: #F37748;
     color: white;
     border-radius: 50px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin: auto;
 }
 
 button.btn.col-sm-1{
@@ -98,7 +97,7 @@ input{
 .jumbotron{
     color:black;
     border-color: blanchedalmond;
-    padding: 3rem;
+    padding: 2%;
 }
 
 #cardapio{
