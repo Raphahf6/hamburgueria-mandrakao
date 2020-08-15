@@ -3,7 +3,7 @@ const btnCarrinho = document.getElementById('modal')
 const divModal = document.getElementById('modal-body')
 const divCardapio = document.getElementById('cardapio')
 const divBebidas = document.getElementById('cardapio-bebidas')
-const urlProdutos = 'https://raphahf6.github.io/Mercado/db.json'
+const urlProdutos = 'https://raphahf6.github.io/hamburgueria-mandrakao/db.json'
 div.className = 'container'
 
 // let carrinho = {
