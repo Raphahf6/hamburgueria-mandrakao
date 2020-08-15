@@ -87,7 +87,11 @@ axios.get(urlProdutos)
 
 
 
-                    divModal.innerHTML += `<ul class="list-group" id="carrinho-${novoProduto.id}" style="list-style: none;"> <li id="carrinho-produtos-${novoProduto.id}"> <img id="img-produto-carrinho" src="${produtoAtual.imgUrl}"> Produto: ${novoProduto.nome} Quantidade: ${novoProduto.quantidade} Preco: ${novoProduto.preco}<button  class="btn" id="btn-produtos-${novoProduto.id}">X</button><br>
+                    divModal.innerHTML += `<ul class="list-group" id="carrinho-${novoProduto.id}" 
+                    style="list-style: none;"> <li id="carrinho-produtos-${novoProduto.id}"> 
+                    <img id="img-produto-carrinho" src="${produtoAtual.imgUrl}"> 
+                    Produto: ${novoProduto.nome} Quantidade: ${novoProduto.quantidade} 
+                    Preco: ${novoProduto.preco}<button type="button" class="btn-produtos" id="btn-produtos-${novoProduto.id}">x</button><br>
                     </li></ul>`
                     alert(`${novoProduto.nome} Quantidade: ${novoProduto.quantidade} foi adicionado ao carrinho`)
 
