@@ -235,6 +235,7 @@ axios.get(urlProdutos)
     })
 
 
+    
 axios.get(urlProdutos)
     .then(response => {
         const api = response.data
