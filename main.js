@@ -37,9 +37,9 @@ axios.get(urlProdutos)
 
 
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
+                            <input type="text" class="form-control col-sm-1 col-lg-12" id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                                <button class="btn" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
+                                <button type="button" class="btn col-sm-1 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
 
 
                         </div>
@@ -115,7 +115,6 @@ axios.get(urlProdutos)
 
                     btnRemoveProduto.addEventListener('click', () => {
                         let divCarrinho = document.getElementById(`carrinho-${produtoAtualNoCarrinho.id}`)
-                        let listaCarrinho = document.getElementById(`carrinho-produtos-${produtoAtualNoCarrinho.id}`)
                         divCarrinho.outerHTML = ''
                         carrinho.produtos.splice(produtoAtualNoCarrinho, 1)
                         carrinho.total -= produtoAtualNoCarrinho.preco
@@ -157,6 +156,7 @@ axios.get(urlProdutos)
 
         limparCarrinho = () => {
             carrinho.total = 0
+            carrinho.produtos.splice(0, carrinho.produtos.length)
             inputTotal.value = carrinho.total
             divModal.innerHTML = ''
         }

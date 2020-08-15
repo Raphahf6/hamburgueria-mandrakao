@@ -37,9 +37,10 @@ footer{
 #total {
     width: 4rem;
     margin-right: 0rem;
+    border-radius: 19px;
 }
 
-button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=modal-fechar], button[class=btn]{
+button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=modal-fechar]{
     background-color: #F37748;
     color: white;
     border-radius: 50px;
@@ -47,6 +48,13 @@ button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=moda
     margin-left: 0px;
 }
 
+button.btn.col-sm-1{
+    background-color: #F37748;
+    color: white;
+    border-radius: 50px;
+    margin-top: 2%;
+    margin-left: 0px;
+}
 .navbar input, .navbar p{
     margin: initial;
     margin-left: 10px;
@@ -74,13 +82,17 @@ button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=moda
 .carousel-inner img {
     height: 40rem;
 }
-input[class=form-control]{
+
+
+input.form-control.col-sm-1{
     margin-right: 13px;
     border-radius: 50px;
 }
 
 input{
     text-align: center;
+    border-radius: 19px;
+
 }
 
 .jumbotron{
