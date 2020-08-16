@@ -48,13 +48,13 @@
         "id": 7,
         "nome": "X-Axios",
         "preco": 25,
-        "imgUrl": "https://images.unsplash.com/photo-1584178639036-613ba57e5e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        "imgUrl": "assets/img/x-axios.jpg"
       },
       {
         "id": 8,
         "nome": "X-Magrao",
         "preco": "30",
-        "imgUrl":"https://images.unsplash.com/photo-1595289917299-ed07df93e114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        "imgUrl":"assets/img/x-magrao.jpeg"
       }
     ],
 
@@ -63,19 +63,19 @@
         "id": 9,
         "nome": "Coca-Cola",
         "preco": 8,
-        "imgUrl":"https://images.unsplash.com/photo-1514178255089-603d3a35b24a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        "imgUrl":"assets/img/coca-cola.jpeg"
       },
       {
         "id": 10,
         "nome": "Corona-Extra",
         "preco": 5,
-        "imgUrl": "https://images.unsplash.com/photo-1595863752443-f9e973f8066d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        "imgUrl": "assets/img/corona-extra.jpeg"
 
       },{
         "id": 11,
         "nome": "Heineken",
         "preco": 7,
-        "imgUrl": "https://images.unsplash.com/photo-1591025106211-409d7cd59974?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        "imgUrl": "assets/img/heineken.jpeg"
       }
     ]
   }
