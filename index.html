@@ -25,7 +25,7 @@
 <body>
 
 
-    <!-- <div class="container col-sm-12 col-lg-12">
+    <div class="container col-sm-12 col-lg-12">
         <div id="carousel carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -57,14 +57,14 @@
             </div>
 
         </div>
-    </div> -->
+    </div>
 
 
     <div class="container col-sm-12 col-lg-12" id="navbar-carrinho">
         <nav class="navbar bg-dark">
             <form class=" text-white form-inline">
-            <input class="form-control" type="button" id="dark-mode" value="Dark">
-            <input class="form-control" type="button" id="light-mode" value="Light">
+                <input type="button" class="btn" id="dark-mode" value="Dark">
+                <input type="button" class="btn" id="light-mode" value="Light">
 
             </form>
 
@@ -73,21 +73,22 @@
                 <p class="text-white" style="margin-right:5px ;">Total no carrinho</p>
                 <input class="form-control" type="text" id="total" value="0" disabled>
 
-                <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop" id="modal">
-                    Carrinho
+                <input type="button" class="btn" data-toggle="modal" value="Carrinho" data-target="#staticBackdrop"
+                    id="modal">
+
                 </button>
 
             </form>
         </nav>
-       
+
 
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header text-white">
-                        <h5 class="modal-title text-dark" id="staticBackdropLabel">Carrinho</h5>
+            <div class="modal-dialog bg-light">
+                <div class="modal-content bg-light">
+                    <div class="modal-header text-black bg-light">
+                        <h5 class="modal-title text-black" id="staticBackdropLabel">Carrinho</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -96,9 +97,9 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn" id="limpar-carrinho">Limpar Carrinho</button>
+                        <input type="button" class="btn" id="limpar-carrinho" value="Limpar Carrinho">
 
-                        <button type="button" class="btn" id="modal-fechar" data-dismiss="modal">Fechar</button>
+                        <input type="button" class="btn" id="modal-fechar" data-dismiss="modal" value="Fechar">
                     </div>
                 </div>
             </div>
@@ -119,7 +120,7 @@
         </div>
     </div>
 
-    <div class="container col-sm-12 col-lg-10 offset-lg-1" id="cardapio">
+    <div class="container col-sm-12 col-lg-12" id="cardapio">
 
     </div>
 

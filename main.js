@@ -128,20 +128,20 @@ axios.get(urlProdutos)
         for (i = 0; i < hamburgueres.length; i++) {
             let produtoAtual = hamburgueres[i]
             let divCard = document.createElement('div')
-            divCard.className = 'col-sm-12 col-lg-4'
+            divCard.className = 'col-sm-7 col-md-5 col-lg-4'
             divCard.innerHTML = ` 
                 <div class="card text-center text-white bg-dark">
                     <img src="${produtoAtual.imgUrl}" class="card-img-top" alt="..." id="imgProduto">
                     <div class="card-body">
                         <h5 class="card-title">${produtoAtual.nome}</h5>
                         <p class="card-text">
-                            Preço:<input value="${produtoAtual.preco}" class="preco .text-black-50" id="preco-${produtoAtual.id}" disabled></p>
+                            Preço:<input value="${produtoAtual.preco}" class="preco text-black-50" id="preco-${produtoAtual.id}" disabled></p>
 
 
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control col-sm-1 col-lg-12" id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
+                            <input type="text" class="form-control col-sm-12 col-md-12 col-lg-12 quantidade " id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                                <button type="button" class="btn col-sm-1 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
+                                <button type="button" class="btn col-sm-12 col-md-12 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
 
 
                         </div>
@@ -267,20 +267,20 @@ axios.get(urlProdutos)
         for (i = 0; i < bebidas.length; i++) {
             let produtoAtual = bebidas[i]
             let divCard = document.createElement('div')
-            divCard.className = 'col-sm-12 col-lg-4'
+            divCard.className = 'col-sm-7 col-md-5 col-lg-4'
             divCard.innerHTML = ` 
                 <div class="card text-center text-white bg-dark">
                     <img src="${produtoAtual.imgUrl}" class="card-img-top" alt="..." id="imgProduto">
                     <div class="card-body">
                         <h5 class="card-title">${produtoAtual.nome}</h5>
                         <p class="card-text">
-                            Preço:<input value="${produtoAtual.preco}" class="preco .text-black-50" id="preco-${produtoAtual.id}" disabled></p>
+                            Preço:<input value="${produtoAtual.preco}" class="preco text-black-50" id="preco-${produtoAtual.id}" disabled></p>
 
 
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control col-sm-1 col-lg-12" id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
+                            <input type="text" class="form-control col-sm-12 col-md-12 col-lg-12 quantidade" id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                                <button type="button" class="btn col-sm-1 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
+                                <button type="button" class="btn col-sm-12 col-md-12 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
 
 
                         </div>

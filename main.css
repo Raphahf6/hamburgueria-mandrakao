@@ -36,24 +36,29 @@ footer{
 
 #total {
     width: 4rem;
-    border-radius: 19px;
+    border-radius: 8px;
     margin: auto;
 }
 
 button[id=comprar], button[id=limpar-carrinho], button[id=modal], button[id=modal-fechar]{
-    background-color: #F37748;
+    background-color: #FCAB10;
     color: white;
-    border-radius: 50px;
+    border-radius: 8px;
     margin: auto;
 }
+ 
 
-button.btn.col-sm-1{
-    background-color: #F37748;
-    color: white;
-    border-radius: 50px;
-    margin-top: 2%;
-    margin-left: 0px;
+button.btn.col-sm-12.col-lg-12{
+    background-color: #FCAB10;
+    margin-top: 3%;
+    border-radius: 20px;
 }
+
+input.form-control.quantidade{
+    margin-right: 13px;
+    border-radius: 20px;
+}
+
 .navbar input, .navbar p{
     margin: initial;
     margin-left: 10px;
@@ -83,10 +88,7 @@ button.btn.col-sm-1{
 }
 
 
-input.form-control.col-sm-1{
-    margin-right: 13px;
-    border-radius: 50px;
-}
+
 
 input{
     text-align: center;
@@ -118,6 +120,8 @@ button[class=btn-produtos]{
     border-style: none;
 }
 
-input[id=light-mode], input[id=dark-mode]{
-    border-radius: 20px;
+input[id=light-mode], input[id=dark-mode], input[id=modal], input[id=modal-fechar], input[id=limpar-carrinho]{
+    border-radius: 8px;
+    background-color: #FCAB10 ;
+    color:#512D38;
 }
