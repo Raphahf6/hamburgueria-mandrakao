@@ -117,3 +117,7 @@ button[class=btn-produtos]{
     border-radius: 8px;
     border-style: none;
 }
+
+input[id=light-mode], input[id=dark-mode]{
+    border-radius: 20px;
+}

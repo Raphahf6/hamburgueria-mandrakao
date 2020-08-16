@@ -24,7 +24,7 @@
 
 <body>
 
-    
+
     <!-- <div class="container col-sm-12 col-lg-12">
         <div id="carousel carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -61,27 +61,25 @@
 
 
     <div class="container col-sm-12 col-lg-12" id="navbar-carrinho">
-        <nav class="navbar  bg-dark">
-            <a class="navbar-brand text-white"><input class="form-control" type="submit" id="dark-mode" value="dark mode">
-            </a>
+        <nav class="navbar bg-dark">
+            <form class=" text-white form-inline">
+            <input class="form-control" type="button" id="dark-mode" value="Dark">
+            <input class="form-control" type="button" id="light-mode" value="Light">
+
+            </form>
+
+
             <form class="form-inline">
-                <p class="text-white"  style="margin-right:5px ;">Total no carrinho</p>
+                <p class="text-white" style="margin-right:5px ;">Total no carrinho</p>
                 <input class="form-control" type="text" id="total" value="0" disabled>
-                
+
                 <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop" id="modal">
                     Carrinho
                 </button>
 
             </form>
         </nav>
-        <!-- <nav class="navbar navbar-brand form-inline navbar-light bg-light col-sm-12">
-            <img src="./assets/img/favicon.ico">
-                <input class="form-control" type="text" id="total" value="0" disabled>
-                <button class="btn" id="limpar-carrinho">Limpar Carrinho</button>
-                <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop" id="modal">
-                    Carrinho
-                </button>
-        </nav> -->
+       
 
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
