@@ -102,13 +102,6 @@ input{
     padding: 2%;
 }
 
-div[id=cardapio], div[id=cardapio-bebidas]{
-    border-style: solid;
-    border-color: blanchedalmond;
-    border-radius: 10px;
-
-    }
-
 #img-produto-carrinho {
     width: 54px;
     margin-right: 9px;
