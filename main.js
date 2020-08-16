@@ -128,7 +128,7 @@ axios.get(urlProdutos)
         for (i = 0; i < hamburgueres.length; i++) {
             let produtoAtual = hamburgueres[i]
             let divCard = document.createElement('div')
-            divCard.className = 'col-sm-7 col-md-5 col-lg-4'
+            divCard.className = 'col-sm-12 offset-sm-0 col-md-5 offset-md-0 col-lg-4 offset-lg-0 col-xl-3 offset-xl-0'
             divCard.innerHTML = ` 
                 <div class="card text-center text-white bg-dark">
                     <img src="${produtoAtual.imgUrl}" class="card-img-top" alt="..." id="imgProduto">
@@ -267,7 +267,7 @@ axios.get(urlProdutos)
         for (i = 0; i < bebidas.length; i++) {
             let produtoAtual = bebidas[i]
             let divCard = document.createElement('div')
-            divCard.className = 'col-sm-7 col-md-5 col-lg-4'
+            divCard.className = 'col-sm-12 offset-sm-0 col-md-5 offset-md-0 col-lg-4 offset-lg-0 col-xl-3 offset-xl-0'
             divCard.innerHTML = ` 
                 <div class="card text-center text-white bg-dark">
                     <img src="${produtoAtual.imgUrl}" class="card-img-top" alt="..." id="imgProduto">
