@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="main.css">
 
 
@@ -23,8 +25,6 @@
 </head>
 
 <body>
-
-
     <div class="container col-sm-12 col-lg-12">
         <div id="carousel carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -55,33 +55,22 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-
     <div class="container col-sm-12 col-lg-12" id="navbar-carrinho">
         <nav class="navbar bg-dark">
             <form class=" text-white form-inline">
                 <input type="button" class="btn" id="dark-mode" value="Dark">
                 <input type="button" class="btn" id="light-mode" value="Light">
-
             </form>
-
-
             <form class="form-inline">
                 <p class="text-white" style="margin-right:5px ;">Total no carrinho</p>
                 <input class="form-control" type="text" id="total" value="0" disabled>
-
                 <input type="button" class="btn" data-toggle="modal" value="Carrinho" data-target="#staticBackdrop"
                     id="modal">
-
                 </button>
-
             </form>
         </nav>
-
-
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -102,13 +91,7 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
     </div>
-
     <div class="container col-sm-12 col-lg-8">
         <div class="jumbotron bg-transparent jumbotron-fluid col-sm-12">
             <div class="container" id="titulo-produtos">
@@ -117,11 +100,9 @@
             </div>
         </div>
     </div>
-
     <div class="container col-sm-12 col-lg-10 col-md-11 col-xl-12" id="cardapio">
 
     </div>
-
     <div class="container col-sm-8 col-lg-8">
         <div class="jumbotron bg-transparent jumbotron-fluid col-sm-12">
             <div class="container" id="titulo-produtos">
@@ -130,14 +111,10 @@
             </div>
         </div>
     </div>
-
-
     <div class="container col-sm-12 col-lg-10 col-md-11 col-xl-12" id="cardapio-bebidas">
-
     </div>
 
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 
 </body>

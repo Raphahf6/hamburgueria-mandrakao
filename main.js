@@ -135,7 +135,7 @@ axios.get(urlProdutos)
                         <div class="input-group mb-3">
                             <input type="text" class="form-control col-sm-12 col-md-12 col-lg-12 quantidade " id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                                <button type="button" class="btn col-sm-12 col-md-12 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
+                                <button title="Adiciona ao carrinho" type="button" class="btn col-sm-12 col-md-12 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
 
                         </div>
                     </div>
@@ -193,7 +193,7 @@ axios.get(urlProdutos)
 
                 })
 
-
+                
                 alert(`${novoProduto.nome} Quantidade: ${novoProduto.quantidade} foi adicionado ao carrinho`)
                 inputQuantidade.value = ''
 
@@ -238,7 +238,7 @@ axios.get(urlProdutos)
                         <div class="input-group mb-3">
                             <input type="text" class="form-control col-sm-12 col-md-12 col-lg-12 quantidade" id="quantidade-${produtoAtual.id}" placeholder="Quantidade"
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
-                                <button type="button" class="btn col-sm-12 col-md-12 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
+                                <button title="Adiciona ao carrinho" type="button" class="btn col-sm-12 col-md-12 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
 
 
                         </div>
