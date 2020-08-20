@@ -110,7 +110,6 @@ axios.get(urlProdutos)
     .then(response => {
         const api = response.data
         const { hamburgueres } = api
-        console.log(hamburgueres)
 
         const container = document.createElement('div')
         container.className = 'container'
