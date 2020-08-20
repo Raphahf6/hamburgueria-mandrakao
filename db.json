@@ -1,81 +1,81 @@
 {
-    "hamburgueres": [
-      {
-        "id": 0,
-        "nome": "X-bacon",
-        "preco": 10,
-        "imgUrl": "assets/img/x-bacon.jpg",
-        "quantidade": ""
-      },
-      {
-        "id": 1,
-        "nome": "X-mandrake",
-        "preco": 20,
-        "imgUrl": "assets/img/x-mandrake.jpg"
-
-      },
-      {
-        "id": 2,
-        "nome": "Big",
-        "preco": 16,
-        "imgUrl": "assets/img/big.jpg"
-      },
-      {
-        "id": 3,
-        "nome": "X-tudo",
-        "preco": 12,
-        "imgUrl": "assets/img/x-tudo.jpg"
-      },
-      {
-        "id": 4,
-        "nome": "X-promise",
-        "preco": 17,
-        "imgUrl": "assets/img/x-promise.jpg"
-      },
-      {
-        "id": 5,
-        "nome": "X-salada",
-        "preco": 10,
-        "imgUrl": "assets/img/x-salada.jpg"
-      },
-      {
-        "id": 6,
-        "nome": "Big Bacon",
-        "preco": 15,
-        "imgUrl": "assets/img/big.jpg"
-      },
-      {
-        "id": 7,
-        "nome": "X-Axios",
-        "preco": 25,
-        "imgUrl": "assets/img/x-axios.jpg"
-      },
-      {
-        "id": 8,
-        "nome": "X-Magrao",
-        "preco": "30",
-        "imgUrl":"assets/img/x-magrao.jpeg"
-      }
-    ],
-
-    "bebidas":[
-      {
-        "id": 9,
-        "nome": "Coca-Cola",
-        "preco": 8,
-        "imgUrl":"assets/img/coca-cola.jpeg"
-      },
-      {
-        "id": 10,
-        "nome": "Corona-Extra",
-        "preco": 5,
-        "imgUrl": "assets/img/corona-extra.jpeg"
-
-      },{
-        "id": 11,
-        "nome": "Heineken",
-        "preco": 7,
-        "imgUrl": "assets/img/heineken.jpeg"
-      }
-    ]
-  }
+  "hamburgueres": [
+    {
+      "id": 0,
+      "nome": "X-bacon",
+      "preco": 10,
+      "imgUrl": "assets/img/x-bacon.jpg",
+      "quantidade": ""
+    },
+    {
+      "id": 1,
+      "nome": "X-mandrake",
+      "preco": 20,
+      "imgUrl": "assets/img/x-mandrake.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Big",
+      "preco": 16,
+      "imgUrl": "assets/img/big.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "X-tudo",
+      "preco": 12,
+      "imgUrl": "assets/img/x-tudo.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "X-promise",
+      "preco": 17,
+      "imgUrl": "assets/img/x-promise.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "X-salada",
+      "preco": 10,
+      "imgUrl": "assets/img/x-salada.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Big Bacon",
+      "preco": 15,
+      "imgUrl": "assets/img/big.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "X-Axios",
+      "preco": 25,
+      "imgUrl": "assets/img/x-axios.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "X-Magrao",
+      "preco": "30",
+      "imgUrl": "assets/img/x-magrao.jpeg"
+    }
+    
+  ],
+  "bebidas": [
+    {
+      "id": 9,
+      "nome": "Coca-Cola",
+      "preco": 8,
+      "imgUrl": "assets/img/coca-cola.jpeg"
+    },
+    {
+      "id": 10,
+      "nome": "Corona-Extra",
+      "preco": 5,
+      "imgUrl": "assets/img/corona-extra.jpeg"
+    },
+    {
+      "id": 11,
+      "nome": "Heineken",
+      "preco": 7,
+      "imgUrl": "assets/img/heineken.jpeg"
+    }
+  ],
+  "carrinho": []
+}
