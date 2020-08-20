@@ -169,7 +169,7 @@ axios.get(urlProdutos)
 
                 const produtoHamburguer = document.createElement('div')
                 produtoHamburguer.id = `${novoProduto.id}`
-                produtoHamburguer.innerHTML = `<ul class="list-group" id="carrinho-${novoProduto.quantidade}" 
+                produtoHamburguer.innerHTML = `<ul class="list-group" id="carrinho-${novoProduto.id}" 
                 style="list-style: none;"> <li id="carrinho-produtos-${novoProduto.id}"> 
                 <img id="img-produto-carrinho" src="${produtoAtual.imgUrl}"> 
                 Produto: ${novoProduto.nome} Quantidade: ${novoProduto.quantidade} 
@@ -180,7 +180,7 @@ axios.get(urlProdutos)
                 let btnRemoveProduto = document.getElementById(`btn-produtos-${novoProduto.id}`)
 
                     btnRemoveProduto.addEventListener("click", () => {
-                        let divCarrinho = document.getElementById(`carrinho-${novoProduto.quantidade}`)
+                        let divCarrinho = document.getElementById(`carrinho-${novoProduto.id}`)
                         divCarrinho.outerHTML = ''
                         
                         carrinho.removeProduto(novoProduto)
