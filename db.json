@@ -75,6 +75,12 @@
       "nome": "Heineken",
       "preco": 7,
       "imgUrl": "assets/img/heineken.jpeg"
+    },
+    {
+      "id": 12,
+      "nome": "Pepsi-max",
+      "preco": 5,
+      "imgUrl":"assets/img/pepsi-max.jpeg"
     }
   ],
   "carrinho": []
