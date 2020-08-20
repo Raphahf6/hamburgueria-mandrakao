@@ -82,8 +82,8 @@ footer.innerHTML = `
                             <div class="mr-auto bd-highlight">
                         <p>Hamburgueria Mandrakao®</p>
                         </div>
-                            <div class=" bd-highlight"><a href="https://www.arbyte.com.br/"><img src="assets/img/favicon.ico"
-                                alt="Logo Arbyte" class="brand-icon ml-auto"></a></div>
+                            <div class=" bd-highlight"><a href="#"><img src="assets/img/favicon.ico"
+                                alt="Logo hamburgueria" class="brand-icon ml-auto"></a></div>
                             </div>
                             `
 
@@ -162,6 +162,9 @@ axios.get(urlProdutos)
 
 
                 let novoProduto = new ProdutoNoCarrinho(produtoAtual.nome, inputQuantidade.value, preco, produtoAtual.id)
+                if(carrinho.produtos.includes(novoProduto)){
+                    console.log('ja existe um produto igual no carrinho')
+                }
 
                 carrinho.produtos.push(novoProduto)
                 carrinho.somaTotal(novoProduto.preco)
@@ -169,25 +172,27 @@ axios.get(urlProdutos)
 
                 const produtoHamburguer = document.createElement('div')
                 produtoHamburguer.id = `${novoProduto.id}`
-                produtoHamburguer.innerHTML = `<ul class="list-group" id="carrinho-${novoProduto.id}" 
+                produtoHamburguer.innerHTML = `<ul class="list-group" id="carrinho-${novoProduto.id}-${novoProduto.quantidade}" 
                 style="list-style: none;"> <li id="carrinho-produtos-${novoProduto.id}"> 
                 <img id="img-produto-carrinho" src="${produtoAtual.imgUrl}"> 
                 Produto: ${novoProduto.nome} Quantidade: ${novoProduto.quantidade} 
-                Preco: ${novoProduto.preco}<button type="button" class="btn-produtos" id="btn-produtos-${novoProduto.id}">x</button><br>
+                Preco: ${novoProduto.preco}<button type="button" class="btn-produtos" id="btn-produtos-${novoProduto.id}-${novoProduto.quantidade}">x</button><br>
                 </li></ul>`
+
                 divModal.appendChild(produtoHamburguer)
 
-                let btnRemoveProduto = document.getElementById(`btn-produtos-${novoProduto.id}`)
+                let btnRemoveProduto = document.getElementById(`btn-produtos-${novoProduto.id}-${novoProduto.quantidade}`)
+                
+                btnRemoveProduto.addEventListener("click", () => {
+                    let divCarrinho = document.getElementById(`carrinho-${novoProduto.id}-${novoProduto.quantidade}`)
 
-                    btnRemoveProduto.addEventListener("click", () => {
-                        let divCarrinho = document.getElementById(`carrinho-${novoProduto.id}`)
-                        divCarrinho.outerHTML = ''
-                        
-                        carrinho.removeProduto(novoProduto)
-                        carrinho.subtraiTotal(novoProduto.preco)
-                        inputTotal.value = carrinho.total
+                    divCarrinho.outerHTML = ''
 
-                    })
+                    carrinho.removeProduto(novoProduto)
+                    carrinho.subtraiTotal(novoProduto.preco)
+                    inputTotal.value = carrinho.total
+
+                })
 
 
                 alert(`${novoProduto.nome} Quantidade: ${novoProduto.quantidade} foi adicionado ao carrinho`)
@@ -199,10 +204,6 @@ axios.get(urlProdutos)
         }
 
     })
-
-
-
-
 
     .catch(err => {
         alert(`${err}`)
@@ -275,7 +276,7 @@ axios.get(urlProdutos)
 
                 let novoProduto = new ProdutoNoCarrinho(produtoAtual.nome, inputQuantidade.value, preco, produtoAtual.id)
 
-            
+
                 carrinho.produtos.push(novoProduto)
                 carrinho.somaTotal(novoProduto.preco)
                 inputTotal.value = carrinho.total
@@ -283,12 +284,14 @@ axios.get(urlProdutos)
 
                 const produtoBebida = document.createElement('div')
                 produtoBebida.id = `${novoProduto.id}`
-                produtoBebida.innerHTML = `<ul class="list-group" id="carrinho-${novoProduto.id}" 
+                produtoBebida.innerHTML = `<ul class="list-group" id="carrinho-${novoProduto.id}-${novoProduto.quantidade}" 
                 style="list-style: none;"> <li id="carrinho-produtos-${novoProduto.id}"> 
                 <img id="img-produto-carrinho" src="${produtoAtual.imgUrl}"> 
                 Produto: ${novoProduto.nome} Quantidade: ${novoProduto.quantidade} 
-                Preco: ${novoProduto.preco}<button type="button" class="btn-produtos" id="btn-produtos-${novoProduto.id}">x</button><br>
+                Preco: ${novoProduto.preco}<button type="button" class="btn-produtos" id="btn-produtos-${novoProduto.id}-${novoProduto.quantidade}">x</button><br>
                 </li></ul>`
+
+
                 divModal.appendChild(produtoBebida)
 
                 let btnRemoveProduto = document.getElementById(`btn-produtos-${novoProduto.id}`)
@@ -296,7 +299,7 @@ axios.get(urlProdutos)
                 btnRemoveProduto.addEventListener("click", () => {
                     let divCarrinho = document.getElementById(`carrinho-${novoProduto.id}`)
                     divCarrinho.outerHTML = ''
-                    
+
                     carrinho.removeProduto(novoProduto)
                     carrinho.subtraiTotal(novoProduto.preco)
                     inputTotal.value = carrinho.total
