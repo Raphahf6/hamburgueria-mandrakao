@@ -137,7 +137,6 @@ axios.get(urlProdutos)
                                 aria-label="Digite a quantidade" aria-describedby="button-addon2">
                                 <button type="button" class="btn col-sm-12 col-md-12 col-lg-12" id="comprar-${produtoAtual.id}">Adicionar ao carrinho</button>
 
-
                         </div>
                     </div>
                 </div>
@@ -294,10 +293,10 @@ axios.get(urlProdutos)
 
                 divModal.appendChild(produtoBebida)
 
-                let btnRemoveProduto = document.getElementById(`btn-produtos-${novoProduto.id}`)
+                let btnRemoveProduto = document.getElementById(`btn-produtos-${novoProduto.id}-${novoProduto.quantidade}`)
 
                 btnRemoveProduto.addEventListener("click", () => {
-                    let divCarrinho = document.getElementById(`carrinho-${novoProduto.id}`)
+                    let divCarrinho = document.getElementById(`carrinho-${novoProduto.id}-${novoProduto.quantidade}`)
                     divCarrinho.outerHTML = ''
 
                     carrinho.removeProduto(novoProduto)
