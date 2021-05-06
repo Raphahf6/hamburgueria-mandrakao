@@ -75,6 +75,8 @@ class ProdutoNoCarrinho {
 }
 
 const inputTotal = document.getElementById('total')
+
+
 /*const footer = document.createElement('footer')
 footer.className = 'container-fluid bg-dark text-light p-5 mt-3'
 footer.innerHTML = `
@@ -161,7 +163,7 @@ axios.get(urlProdutos)
 
 
                 let novoProduto = new ProdutoNoCarrinho(produtoAtual.nome, inputQuantidade.value, preco, produtoAtual.id)
-                if(carrinho.produtos.includes(novoProduto)){
+                if (carrinho.produtos.includes(novoProduto.id)) {
                     console.log('ja existe um produto igual no carrinho')
                 }
 
@@ -181,7 +183,7 @@ axios.get(urlProdutos)
                 divModal.appendChild(produtoHamburguer)
 
                 let btnRemoveProduto = document.getElementById(`btn-produtos-${novoProduto.id}-${novoProduto.quantidade}`)
-                
+
                 btnRemoveProduto.addEventListener("click", () => {
                     let divCarrinho = document.getElementById(`carrinho-${novoProduto.id}-${novoProduto.quantidade}`)
 
@@ -193,7 +195,7 @@ axios.get(urlProdutos)
 
                 })
 
-                
+
                 alert(`${novoProduto.nome} Quantidade: ${novoProduto.quantidade} foi adicionado ao carrinho`)
                 inputQuantidade.value = ''
 

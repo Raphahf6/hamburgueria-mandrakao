@@ -6,7 +6,7 @@
 
 body{
     background-color: #EFD09E;
-    margin: 5vh;
+    margin: 2vh;
     font-family: roboto;
     
 }
@@ -16,8 +16,8 @@ footer{
 }
 
 .navbar{
-    border-radius: 10px;
-    margin-bottom: 1em;
+    
+    margin-bottom: 2vh;
 }
 .card{
     margin: 1rem;
