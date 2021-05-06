@@ -75,7 +75,7 @@ class ProdutoNoCarrinho {
 }
 
 const inputTotal = document.getElementById('total')
-const footer = document.createElement('footer')
+/*const footer = document.createElement('footer')
 footer.className = 'container-fluid bg-dark text-light p-5 mt-3'
 footer.innerHTML = `
                         <div class="d-flex bd-highlight">
@@ -87,7 +87,7 @@ footer.innerHTML = `
                             </div>
                             `
 
-document.body.appendChild(footer)
+document.body.appendChild(footer) */
 
 
 
